@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión del Conocimiento</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .image-map {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="1.jpg" alt="Gestión del Conocimiento" usemap="#map1" class="image-map" id="main-image">
+        
+        <!-- Mapas de imagen para cada imagen principal -->
+        <map name="map1" id="map1">
+            <!-- Botones de Navegación -->
+            <area target="" alt="Guía Formatos" title="Guía Formatos" href="#" coords="50,150,300,300" shape="rect" onclick="showImage('1.jpg', 'map1')">
+            <area target="" alt="Ingresos y Egresos" title="Ingresos y Egresos" href="#" coords="50,150,300,360" shape="rect" onclick="showImage('2.jpg', 'map2')">
+            <area target="" alt="Comités" title="Comités" href="#" coords="50,150,300,420" shape="rect" onclick="showImage('3.jpg', 'map3')">
+            <area target="" alt="Plataformas" title="Plataformas" href="#" coords="50,330,300,500" shape="rect" onclick="showImage('4.jpg', 'map4')">
+
+            <!-- Enlaces a los PDFs - Imagen 1 -->
+            <area target="_blank" alt="Ausentismo" title="GUÍA PRACTICANTE AUSENTISMO" href="https://docs.google.com/spreadsheets/d/1JMkFJ988SRxtC_j-XZyNFPw5WkRJHTtifXCsHUVjT8I/edit?usp=sharing" coords="376,250,520,440" shape="rect">
+            <area target="_blank" alt="Operarios" title="GUÍA PRACTICANTE OPERARIOS" href="https://drive.google.com/file/d/1rsB9x1z9ap_MZUSuNtuEss6BbuffY5Bl/view?usp=sharing" coords="792,250,580,440" shape="rect">
+            <area target="_blank" alt="Administrativos" title="GUÍA PRACTICANTE ADMINISTRATIVOS" href="https://drive.google.com/file/d/1gs_mJG9w0eFpA21iLZNusTBhxHZCGqDn/view?usp=sharing" coords="966,250,580,440" shape="rect">
+        </map>
+        
+        <map name="map2" id="map2">
+            <!-- Botones de Navegación -->
+            <area target="" alt="Guía Formatos" title="Guía Formatos" href="#" coords="50,150,300,300" shape="rect" onclick="showImage('1.jpg', 'map1')">
+            <area target="" alt="Ingresos y Egresos" title="Ingresos y Egresos" href="#" coords="50,150,300,360" shape="rect" onclick="showImage('2.jpg', 'map2')">
+            <area target="" alt="Comités" title="Comités" href="#" coords="50,150,300,420" shape="rect" onclick="showImage('3.jpg', 'map3')">
+            <area target="" alt="Plataformas" title="Plataformas" href="#" coords="50,330,300,500" shape="rect" onclick="showImage('4.jpg', 'map4')">
+
+            <!-- Enlaces a los PDFs - Imagen 2 -->
+            <area target="_blank" alt="Ingresos" title="GUÍA INGRESOS" href="URL_DEL_PDF_4" coords="380,240,520,440" shape="rect">
+            <area target="_blank" alt="Egresos" title="GUÍA EGRESOS" href="URL_DEL_PDF_5" coords="746,240,580,440" shape="rect">
+            <area target="_blank" alt="Archivo" title="GUÍA ARCHIVO" href="URL_DEL_PDF_6" coords="967,240,540,440" shape="rect">
+        </map>
+
+        <map name="map3" id="map3">
+            <!-- Botones de Navegación -->
+            <area target="" alt="Guía Formatos" title="Guía Formatos" href="#" coords="50,150,300,300" shape="rect" onclick="showImage('1.jpg', 'map1')">
+            <area target="" alt="Ingresos y Egresos" title="Ingresos y Egresos" href="#" coords="50,150,300,360" shape="rect" onclick="showImage('2.jpg', 'map2')">
+            <area target="" alt="Comités" title="Comités" href="#" coords="50,150,300,420" shape="rect" onclick="showImage('3.jpg', 'map3')">
+            <area target="" alt="Plataformas" title="Plataformas" href="#" coords="50,330,300,500" shape="rect" onclick="showImage('4.jpg', 'map4')">
+
+            <!-- Enlaces a los PDFs - Imagen 3 -->
+            <area target="_blank" alt="Vivienda" title="GUÍA VIVIENDA" href="URL_DEL_PDF_7" coords="380,240,520,440" shape="rect">
+            <area target="_blank" alt="Educación" title="GUÍA EDUCACIÓN" href="URL_DEL_PDF_8" coords="746,240,580,440" shape="rect">
+            <area target="_blank" alt="Bienestar" title="GUÍA BIENESTAR" href="URL_DEL_PDF_9" coords="967,240,540,440" shape="rect">
+        </map>
+
+        <map name="map4" id="map4">
+            <!-- Botones de Navegación -->
+            <area target="" alt="Guía Formatos" title="Guía Formatos" href="#" coords="50,150,300,300" shape="rect" onclick="showImage('1.jpg', 'map1')">
+            <area target="" alt="Ingresos y Egresos" title="Ingresos y Egresos" href="#" coords="50,150,300,360" shape="rect" onclick="showImage('2.jpg', 'map2')">
+            <area target="" alt="Comités" title="Comités" href="#" coords="50,150,300,420" shape="rect" onclick="showImage('3.jpg', 'map3')">
+            <area target="" alt="Plataformas" title="Plataformas" href="#" coords="50,330,300,500" shape="rect" onclick="showImage('4.jpg', 'map4')">
+
+            <!-- Enlaces a los PDFs - Imagen 4 -->
+            <area target="_blank" alt="Sisobox" title="GUÍA SISOBOX" href="URL_DEL_PDF_10" coords="380,240,520,440" shape="rect">
+            <area target="_blank" alt="Laser" title="GUÍA LASER" href="URL_DEL_PDF_11" coords="746,240,580,440" shape="rect">
+            <area target="_blank" alt="One Service" title="GUÍA ONE SERVICE" href="URL_DEL_PDF_12" coords="967,240,540,440" shape="rect">
+        </map>
+    </div>
+
+    <script>
+        function showImage(imageSrc, mapName) {
+            document.getElementById('main-image').src = imageSrc;
+            document.getElementById('main-image').useMap = '#' + mapName;
+        }
+    </script>
+</body>
+</html>
